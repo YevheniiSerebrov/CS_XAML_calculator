@@ -1,0 +1,49 @@
+<Window x:Class="ArrayLab.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ArrayLab"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="446.027" Width="540.453">
+    <Grid Margin="0,0,4,14" Background="#FF253749">
+        <Grid.OpacityMask>
+            <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                <GradientStop Color="#FF1D9E2E" Offset="0.884"/>
+                <GradientStop Color="#FF253749" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.OpacityMask>
+        <ComboBox x:Name="cmb" HorizontalAlignment="Left" Margin="162,77,0,0" VerticalAlignment="Top" Width="207" Height="31" SelectionChanged="cmb_SelectionChanged" FontFamily="Cambria" Foreground="#FF1D1C1C" BorderBrush="#FF253749" FontSize="16">
+            <ComboBoxItem Name="avg" Content="-Середнє арифметичне" Foreground="#FF1D1C1C" BorderBrush="#FF253749" FontSize="16"/>
+            <ComboBoxItem Name ="sum" Content="-Сума всіх елементів" Foreground="#FF1D1C1C" FontSize="16"/>
+            <ComboBoxItem Name ="max" Content="-Максимальне значення" Foreground="#FF1D1C1C" BorderBrush="#FF253749" FontSize="16"/>
+            <ComboBoxItem Name ="min" Content="-Мінімальне значення" Foreground="#FF1D1C1C" FontSize="16"/>
+            <ComboBoxItem Name="avgquad" Content="-Cереднє квадратичне ." Foreground="#FF1D1C1C" BorderBrush="#FF253749" FontSize="16"/>
+            <ComboBoxItem Name ="sumquad" Content="-Сума квадратів елементів" Foreground="#FF1D1C1C" FontSize="16"/>
+            <ComboBoxItem Name ="avggeom" Content="-Середнє геометричне " Foreground="#FF1D1C1C" BorderBrush="#FF253749" FontSize="16"/>
+            <ComboBoxItem Name="avgcron" Content="-Cереднє хронологічне " Foreground="#FF1D1C1C" FontSize="16"/>
+            <ComboBoxItem Name ="avggarm" Content="-Середнє гармонічне" Foreground="#FF1D1C1C" BorderBrush="#FF253749" FontSize="16"/>
+
+
+
+
+        </ComboBox>
+        <ListBox x:Name="lb"  HorizontalAlignment="Left" Height="238" Margin="41,77,0,0" VerticalAlignment="Top" Width="100" FontFamily="SimSun" FontWeight="Bold" FontSize="16">
+
+        </ListBox>
+        <Button Content="Add" HorizontalAlignment="Left" Margin="161,27,0,0" VerticalAlignment="Top" Width="60" Click="Button_Click" RenderTransformOrigin="0.406,3.134" Height="29" Background="#FFDDDDDD" FontWeight="Bold" FontFamily="SimSun" FontSize="16"/>
+        <TextBox Name="txt" HorizontalAlignment="Left" Height="31" Margin="40,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="99" RenderTransformOrigin="-1.748,4.361" FontSize="16"/>
+        <Button Content="Clear" HorizontalAlignment="Left" Margin="234,27,0,0" VerticalAlignment="Top" Width="60" Click="Button_Click_1" Height="29" FontWeight="Bold" FontFamily="SimSun" RenderTransformOrigin="0.816,0.517" FontSize="16"/>
+        <Button Content="Update" HorizontalAlignment="Left" Margin="307,27,0,0" VerticalAlignment="Top" Width="58" Click="Button_Click_2" Height="29" FontWeight="Bold" FontFamily="SimSun" FontSize="16"/>
+        <Button Content="Go!" HorizontalAlignment="Left" Margin="405,21,0,0" VerticalAlignment="Top" Width="55" Click="Button_Click_3" Height="40" BorderBrush="#00707070" FontSize="18" FontWeight="Bold" FontFamily="Stencil" OpacityMask="#FF99B4D1" RenderTransformOrigin="1.164,0.525">
+            <Button.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FFFCFCFD" Offset="0.95"/>
+                    <GradientStop Color="#FF253749" Offset="1"/>
+                    <GradientStop Color="#FFFCFCFD"/>
+                </RadialGradientBrush>
+            </Button.Background>
+        </Button>
+        <TextBox x:Name="txt_res" HorizontalAlignment="Left" Height="45" Margin="390,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="98" RenderTransformOrigin="0.528,0.683" FontSize="18"/>
+    </Grid>
+</Window>
